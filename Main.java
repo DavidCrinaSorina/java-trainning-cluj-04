@@ -27,7 +27,7 @@ public class Main {
             Meniu s1 = MeniuFactory.getMeniu(name);  // Creez variabila s1 de tipul Meniu, care impreuna cu chose() din interfata Meniu si cu MeniuFactory vor face trimitere la urmatoarele clase, Desert,Ciorbe si celelalte care au aceeasi functie ca ele
             s1.chose();                             //De ex. daca scriem 1, s1.chose() va face sa se parcurga clasa Ciorbe
 
-            System.out.println("Anyting else?    0 for NO / anyting else for YES \n  \uD83D\uDC47");//Aceasta structura de cod, este folosita pentru a vedea daca clientul mai doreste ceva
+            System.out.println("Anyting else?    0 for NO / other number for YES \n  \uD83D\uDC47");//Aceasta structura de cod, este folosita pentru a vedea daca clientul mai doreste ceva
             Scanner c = new Scanner(System.in);                                          //Astfel, daca va scrie 0, comanda lui se va termina, iar daca va scrie orice altceva, va continua sa isi comande
             Integer alegere = Integer.parseInt(c.nextLine());
             if (alegere==0) {
